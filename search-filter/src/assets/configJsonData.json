@@ -1,0 +1,264 @@
+[
+  {
+    "index": 1,
+    "type": "TExt",
+    "label": "Name",
+    "placeholder": "Please enter the username",
+    "formControlName": "UserName",
+    "preSelectedValue": "Prince",
+    "validators": {
+      "required": false
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 2,
+    "type": "NUMBER",
+    "label": "Age",
+    "placeholder": "Please enter the Age",
+    "formControlName": "Age",
+    "preSelectedValue": "",
+    "validators": {
+      "required": false
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 3,
+    "type": "NUMBER",
+    "label": "Mobile No",
+    "placeholder": "Please enter the Mob No",
+    "formControlName": "Mobile No",
+    "preSelectedValue": "",
+    "validators": {
+      "required": false
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 4,
+    "type": "dropDOWN",
+    "label": "Distict",
+    "placeholder": "Select Distict",
+    "formControlName": "Distict",
+    "preSelectedValue": "",
+    "validators": {},
+    "dataList": [
+      {
+        "id": 1,
+        "value": "ICSE"
+      },
+      {
+        "id": 2,
+        "value": "CBSE/NCERT"
+      },
+      {
+        "id": 3,
+        "value": "IGOT-Health"
+      },
+      {
+        "id": 4,
+        "value": "State (Andhra Pradesh)"
+      },
+      {
+        "id": 5,
+        "value": "State (Chandigarh)"
+      },
+      {
+        "id": 6,
+        "value": "State (Chhattisgarh)"
+      },
+      {
+        "id": 7,
+        "value": "State (Delhi)"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "type": "dropdown",
+    "label": "Medium",
+    "placeholder": " Select Medium",
+    "formControlName": "Medium",
+    "preSelectedValue": [
+      ""
+    ],
+    "validators": {
+      "required": true
+    },
+    "dataList": [
+      {
+        "id": 1,
+        "value": "Assamese"
+      },
+      {
+        "id": 2,
+        "value": "Bengali"
+      },
+      {
+        "id": 3,
+        "value": "English"
+      },
+      {
+        "id": 4,
+        "value": "Hindi"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "type": "multipleDropdown",
+    "label": "Grade",
+    "placeholder": "Select Grade",
+    "formControlName": "Grade",
+    "preSelectedValue": "",
+    "validators": {
+      "required": false
+    },
+    "dataList": [
+      {
+        "id": 1,
+        "value": "Class 5"
+      },
+      {
+        "id": 2,
+        "value": "Class 6"
+      },
+      {
+        "id": 3,
+        "value": "Class 7"
+      },
+      {
+        "id": 4,
+        "value": "Class 8"
+      },
+      {
+        "id": 5,
+        "value": "Class 9"
+      },
+      {
+        "id": 6,
+        "value": "Class 10"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "type": "multipleDropdown",
+    "label": "Subject",
+    "placeholder": "Subject",
+    "formControlName": "Subject",
+    "preSelectedValue": [],
+    "validators": {},
+    "dataList": [
+      {
+        "id": 1,
+        "value": "accountancy"
+      },
+      {
+        "id": 2,
+        "value": "biology"
+      },
+      {
+        "id": 3,
+        "value": "chemistry"
+      },
+      {
+        "id": 4,
+        "value": "computer science"
+      },
+      {
+        "id": 2,
+        "value": "creative writing and translation"
+      },
+      {
+        "id": 3,
+        "value": "economics"
+      },
+      {
+        "id": 4,
+        "value": "environmental studies"
+      },
+      {
+        "id": 2,
+        "value": "geography"
+      },
+      {
+        "id": 3,
+        "value": "science"
+      },
+      {
+        "id": 4,
+        "value": "sanskrit"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "type": "radio",
+    "label": "Published user type",
+    "placeholder": "Published user type",
+    "formControlName": "publishedBy",
+    "preSelectedValue": "Student",
+    "validators": {},
+    "dataList": [
+      {
+        "id": 1,
+        "value": "Parent"
+      },
+      {
+        "id": 2,
+        "value": "School head OR Officials"
+      },
+      {
+        "id": 3,
+        "value": "Student"
+      },
+      {
+        "id": 4,
+        "value": "Teacher"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "type": "checkBox",
+    "label": "State",
+    "placeholder": "State",
+    "formControlName": "statesCheckbox",
+    "preSelectedValue": false,
+    "validators": {},
+    "dataList": [
+      {
+        "id": 1,
+        "value": "STATE-KA",
+        "displayName": "Karnataka",
+        "preSelectedValue": false
+      },
+      {
+        "id": 2,
+        "value": "STATE-BR",
+        "displayName": "",
+        "preSelectedValue": false
+      },
+      {
+        "id": 3,
+        "value": "STATE-DL",
+        "displayName": "Delhi",
+        "preSelectedValue": false
+      },
+      {
+        "id": 4,
+        "value": "STATE-TN",
+        "displayName": "",
+        "preSelectedValue": false
+      }
+    ]
+  }
+]

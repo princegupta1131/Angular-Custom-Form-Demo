@@ -1,0 +1,28 @@
+::ng-deep {
+  form {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.divSection {
+  display: flex;
+
+  mat-card {
+    flex-grow: 1;
+    height: 100vh;
+    // background-color: #e0e3e1;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+// ::ngDeep {
+// .mat-form-field-appearance-legacy .mat-form-field-infix {
+//   font-size: 16px;
+//     margin-top: 22px;
+// }
+// }
