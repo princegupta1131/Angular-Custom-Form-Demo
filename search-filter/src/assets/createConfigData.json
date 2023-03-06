@@ -1,0 +1,158 @@
+[
+  {
+    "index": 1,
+    "type": "number",
+    "label": "index",
+    "placeholder": "Please enter Index",
+    "formControlName": "index",
+    "preSelectedValue": "",
+    "validators": {
+      "required": true
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 2,
+    "type": "dropdown",
+    "label": "Form Type",
+    "placeholder": "Form Type",
+    "formControlName": "formType",
+    "preSelectedValue": false,
+    "validators": {},
+    "dataList": [
+      {
+        "id": 1,
+        "value": "checkbox",
+        "displayName": "Check-Box",
+        "preSelectedValue": false
+      },
+      {
+        "id": 2,
+        "value": "dropdown",
+        "displayName": "Drop-Down",
+        "preSelectedValue": false
+      },
+      {
+        "id": 3,
+        "value": "multipledropdown",
+        "displayName": "Multi-Dropdown",
+        "preSelectedValue": false
+      },
+      {
+        "id": 4,
+        "value": "textarea",
+        "displayName": "Text-Area",
+        "preSelectedValue": false
+      },
+      {
+        "id": 5,
+        "value": "text",
+        "displayName": "Text",
+        "preSelectedValue": false
+      },
+      {
+        "id": 6,
+        "value": "number",
+        "displayName": "Number",
+        "preSelectedValue": false
+      },
+      {
+        "id": 7,
+        "value": "radio",
+        "displayName": "Radio",
+        "preSelectedValue": false
+      },
+      {
+        "id": 8,
+        "value": "password",
+        "displayName": "Password",
+        "preSelectedValue": false
+      },
+      {
+        "id": 9,
+        "value": "email",
+        "displayName": "Email",
+        "preSelectedValue": false
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "type": "TExt",
+    "label": "Label",
+    "placeholder": "Please enter the label",
+    "formControlName": "label",
+    "preSelectedValue": "",
+    "validators": {
+      "required": false
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 4,
+    "type": "TExt",
+    "label": "Placeholder",
+    "placeholder": "Please enter the placeholder",
+    "formControlName": "placeholder",
+    "preSelectedValue": "",
+    "validators": {
+      "required": true
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 5,
+    "type": "text",
+    "label": "FormControlName",
+    "placeholder": "Please enter the FormControlName",
+    "formControlName": "formControlName",
+    "preSelectedValue": "",
+    "validators": {
+      "required": true
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 6,
+    "type": "text",
+    "label": "PreSelectedValue",
+    "placeholder": "Please enter the PreSelectedValue",
+    "formControlName": "preSelectedValue",
+    "preSelectedValue": "",
+    "validators": {
+      "required": false
+    },
+    "dataList": [
+      {}
+    ]
+  },
+  {
+    "index": 7,
+    "type": "radio",
+    "label": "IsMandatory",
+    "placeholder": "",
+    "formControlName": "ismandatory",
+    "preSelectedValue": "",
+    "validators": {
+      "required": true
+    },
+    "dataList": [
+      {
+        "id": 1,
+        "value": true
+      },
+      {
+        "id": 1,
+        "value": false
+      }
+    ]
+  }
+]

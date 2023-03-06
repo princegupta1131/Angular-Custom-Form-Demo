@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+  Angular Search Filter Demo
+  <span class="example-spacer"></span>
+  <mat-form-field style="font-size: 16px; margin-top:4px;">
+    <mat-label>Select Language</mat-label>
+    <mat-select [value]="langValue" (selectionChange)="onSelected($event)">
+      <mat-option>Clear</mat-option>
+      <mat-option value="en">English</mat-option>
+      <mat-option value="hi">हिंदी</mat-option>
+      <mat-option value="kn">ಕನ್ನಡ</mat-option>
+    </mat-select>
+  </mat-form-field>
+  {{langValue}}
+</mat-toolbar>
+
+
+<div class="divSection">
+
+  <mat-card>
+    <lib-sb-filters [configJsonData]="formCreateJsonData" [searchFilterInfo]="createFilterTitleInfo"
+      (onChangeFilter)=getFilterData($event) [languageKey]="langValue" [languageJsonData]="languageJsonData">
+    </lib-sb-filters>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-content>
+      <div class="col-6">
+        <h3>😻 Form Creation Data :: </h3>
+        <pre>{{ formCreateData | json }}</pre>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <lib-sb-filters [configJsonData]="formJsonData" [searchFilterInfo]="filterTitleInfo"
+      (onChangeFilter)=onFilterChange($event) [languageKey]="langValue" [languageJsonData]="languageJsonData">
+    </lib-sb-filters>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-content>
+      <div class="col-6">
+        <h3>😻 Output Event Data :: </h3>
+        <pre>{{ resUserData | json }}</pre>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

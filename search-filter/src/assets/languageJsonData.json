@@ -1,0 +1,48 @@
+[{
+    "en":
+    {
+
+      "Board": "Board",
+      "Medium": "Medium",
+      "Grade": "Grade",
+      "Subject": "Subject",
+      "Published user type": "Published user type",
+      "State": "State",
+      "Organistion": "Organistion",
+      "UserName": "UserName..",
+      "Parent": "Parent",
+      "Karnataka": "Karnataka",
+      "Filters matching your profile details": "Filters matching your profile details"
+      
+    },
+    "hi": {
+      
+        "Board": "बोर्ड",
+        "Medium": "माध्यम",
+        "Grade": "श्रेणी",
+        "Subject": "विषय",
+        "Published user type": "प्रकाशित उपयोगकर्ता के  प्रकार",
+        "State": "राज्य",
+        "organisation": "संगठन",
+        "UserName": "उपयोगकर्ता नाम",
+        "Search Filter": "फ़िल्टर खोजें",
+        "Parent": "माता-पिता",
+        "Karnataka": "कर्नाटक",
+        "Filters matching your profile details": "आपके प्रोफ़ाइल विवरण से मेल खाने वाले फ़िल्टर"
+
+    },
+    "kn": {
+          "Board": "ಮಂಡಳಿ/ವಿಶ್ವವಿದ್ಯಾಲಯ",
+          "Medium": "ಮಾಧ್ಯಮ",
+          "Grade": "ಗ್ರೇಡ್",
+          "Subject": "ವಿಷಯ",
+          "Published user type": "ಪ್ರಕಟಿತ ಬಳಕೆದಾರರ ಪ್ರಕಾರ",
+          "State": "ರಾಜ್ಯ",
+          "organisation": "ಸಂಸ್ಥೆ",
+          "UserName": "ಬಳಕೆದಾರ ಹೆಸರು",
+          "Search Filter": "ಹುಡುಕಾಟ ಫಿಲ್ಟರ್",
+          "Parent": "ಪೋಷಕ",
+          "Karnataka": "ಕರ್ನಾಟಕ",
+          "Filters matching your profile details": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ವಿವರಗಳಿಗೆ ಹೊಂದಾಣಿಕೆಯಾಗುವ ಫಿಲ್ಟರ್‌ಗಳು"
+        }
+}]
