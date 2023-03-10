@@ -167,5 +167,8 @@ languageJsonData: [{ // language transalated json data
 ### @output !
  - `onFilterChange($event)` : search-filter  component emits values on every input , To get value include event callbacks
 
- Demo link : https://github-tu8fse.stackblitz.io
- Stackblitz Demo link : https://stackblitz.com/github/princegupta1131/Angular-Custom-Form-Demo/tree/Ng-Form-demo/search-filter
+ 
+ ### Demo link : https://github-tu8fse.stackblitz.io
+ 
+ ### Stackblitz Demo link : https://stackblitz.com/github/princegupta1131/Angular-Custom-Form-Demo/tree/Ng-Form-demo/search-filter
+ 
