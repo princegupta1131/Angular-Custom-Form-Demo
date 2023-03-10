@@ -1,27 +1,171 @@
-# SearchFilter
+# Angular-Custom-Form-Creation using JSON
+Angular Version: 11.1.2.
+---
+[![NPM version](https://img.shields.io/npm/v/sb-filters.svg?flat&logo=npm)](https://img.shields.io/npm/v/sb-filters.svg?style=for-the-badge&logo=npm)
+---
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+Contains Search filter components powered by angular. These components are designed to take any type of element rendering based on JSON data. 
 
-## Development server
+## Getting Started
+For help getting started with a new Angular app, check out the Angular CLI.
+For existing apps, follow these steps to begin using .
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Step 1: Install the Required package !
+```
+    npm install sb-filters --save
+```
+```
+    npm install @angular/material @angular/cdk @angular/animations --save 
+```
+``` 
+    ng add @angular/material
+```
+``` 
+    npm i @ngx-translate/core
+```
+    npm i @ngx-translate/http-loader
 
-## Code scaffolding
+## Step 2: Import the modules and components !
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Import the NgModule for each component you want to use:
 
-## Build
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import {SbFiltersModule} from 'sb-filters'
+import { AppComponent } from './app.component';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    SbFiltersModule
+  ],
+  providers: [ ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+```
 
-## Running unit tests
+## Step 3: Include the library selector in view( Eg .HTML file !
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+ <lib-sb-filters
+            [configJsonData] = "formJsonData"
+            [searchFilterInfo] = "filterTitleInfo"
+            (onChangeFilter) = onFilterChange($event)
+            [languageKey] = "langValue"
+            [languageJsonData] = "languageJsonData">
+</lib-sb-filters>
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Options !
+  - `formJsonData`: Array of form objects.
 
-## Further help
+      ```javascript
+    index: number
+    formControlName: string;
+    label: string;
+    preSelectedValue: string;
+    type: string;
+    placeholder: string;
+    dataList: dataList[
+        id:number,
+        value:string,
+        displayName?:string
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ];
+    validators?: JsonFormValidators[
+        min?: number;
+        max?: number;
+        required?: boolean;
+        requiredTrue?: boolean;
+        email?: boolean;
+        minLength?: boolean;
+        maxLength?: boolean;
+        pattern?: string;
+        nullValidator?: boolean;
+    ];
+    options?: JsonFormControlOptions[
+        min?: string;
+        max?: string;
+        step?: string;
+        icon?: string;
+    ];
+      ```
+
+  - `filterTitleInfo`: Object of title,button/name & CSS configuration.
+  - `langValue`: string of selected language key (en,hi,kn..)
+  - `languageJsonData`: Array of language objects.
+  - `(onChangeFilter)`: component emits values on every input , To get value include event callbacks
+## Sample Json Data !
+``` 
+    formJsonData : {
+      "index": 1, // to define the position of html elements
+      "type": "dropdown", // it will accept these type to create HTML elements -> [Dropdown, Multipledropdown,Checkbox,  Radio, Text, Number, Email, Tel, Textarea, password] 
+      "label": "Board", 
+      "placeholder": "Select Board",
+      "formControlName": "Board",
+      "preSelectedValue": "CBSE/NCERT", // by default values
+      "validators": {"required": true}, // if any forms validation
+      "dataList": [
+        { "id": 1, "value": "ICSE" },
+        { "id": 2, "value": "CBSE/NCERT" },
+        { "id": 3, "value": "IGOT-Health" },
+        { "id": 4, "value": "State (Andhra Pradesh)" },
+        { "id": 5, "value": "State (Chandigarh)" },
+        { "id": 6, "value": "State (Chhattisgarh)" },
+        { "id": 7, "value": "State (Delhi)" }
+      ] //  it is used to display the dropdown values
+
+    } ....
+
+ ``` 
+    filterTitleInfo : {
+    title: 'Search Filters', // title
+    subTitle: 'Search filters sub-title...', // sub title
+    submit: "Submit", // button name
+    clear: "Reset" , // button name
+    isButtonReq: true,
+    styling:{ orientation:"column" }, // row || column
+    } ```
+
+```
+ langValue : 'en'...  // selected global language key
+
+```
+```
+languageJsonData: [{ // language transalated json data
+    en:
+        {
+        "Board": "Board",
+        "Medium": "Medium",
+        "Grade": "Grade",
+        "Subject": "Subject"
+        },
+    hi: 
+        { 
+            "Board": "बोर्ड",
+            "Medium": "माध्यम",
+            "Grade": "श्रेणी",
+            "Subject": "विषय"
+        },
+
+    kn: 
+        {
+            "Board": "ಮಂಡಳಿ/ವಿಶ್ವವಿದ್ಯಾಲಯ",
+            "Medium": "ಮಾಧ್ಯಮ",
+            "Grade": "ಗ್ರೇಡ್",
+            "Subject": "ವಿಷಯ"
+        } .....
+}]
+```
+
+### @output !
+ - `onFilterChange($event)` : search-filter  component emits values on every input , To get value include event callbacks
+
+ Demo link : https://github-tu8fse.stackblitz.io
+ Stackblitz Demo link : https://stackblitz.com/github/princegupta1131/Angular-Custom-Form-Demo/tree/Ng-Form-demo/search-filter
